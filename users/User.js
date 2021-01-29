@@ -8,7 +8,9 @@ const User = connection.define('users',{
     },password: {
         type: Sequelize.STRING,
         allowNull: false
-    }
-})
+    },
+  
 
+})
+//User.sync({force:true})
 module.exports = User
